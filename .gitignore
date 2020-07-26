@@ -1,0 +1,3 @@
+terraform.tfstate
+.terraform/plugins/linux_amd64/lock.json
+adminuser.pem
