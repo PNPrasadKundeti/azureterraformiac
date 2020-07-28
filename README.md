@@ -17,6 +17,7 @@ Build and deploy the infrastructure
 - Create a network interface and connect to NSG
 - Create an SSH key
 - Create a virtual machine
+- VM data disk attachment added
 
 terraform init :  ensures that Terraform has all the prerequisites to build your template in Azure.
 
