@@ -16,7 +16,7 @@ resource "tls_private_key" "example_ssh" {
 
 # Create virtual machine
 resource "azurerm_linux_virtual_machine" "example" {
-  name                = "example-machine"
+  name                = local.vm_name
   resource_group_name = azurerm_resource_group.example.name
   location            = azurerm_resource_group.example.location
   size                = "Standard_F2"
@@ -43,8 +43,8 @@ resource "azurerm_linux_virtual_machine" "example" {
     sku       = "16.04-LTS"
     version   = "latest"
   }
- 
-  tags = {
+
+   tags = {
         environment = "Terraform Demo"
     }
 }
